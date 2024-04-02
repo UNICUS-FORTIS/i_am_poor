@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.teal,
         appBar: AppBar(
           title: Text('I am Poor'),
           backgroundColor: Colors.pinkAccent,
@@ -16,6 +21,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
